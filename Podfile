@@ -8,7 +8,7 @@ target 'Expo' do
   # Pods for Expo
   # NETWORKING
   pod 'Alamofire'
-  pod 'SwiftyJSON', '~> 4.0'
+  pod 'SwiftyJSON', '~> 4.2.0'
   pod 'SDWebImage', '~> 4.0'
 
   target 'ExpoTests' do

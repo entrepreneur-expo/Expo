@@ -19,6 +19,7 @@
 		EA35331222C0525C00250B7A /* ExpoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA35331122C0525C00250B7A /* ExpoTests.swift */; };
 		EA35331D22C0525C00250B7A /* ExpoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA35331C22C0525C00250B7A /* ExpoUITests.swift */; };
 		EA4001E922C1941C0099488D /* PresenterInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4001E822C1941C0099488D /* PresenterInfoViewController.swift */; };
+		EA4167B722C323FF007C6E74 /* presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4167B622C323FF007C6E74 /* presenter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +63,7 @@
 		EA35331C22C0525C00250B7A /* ExpoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpoUITests.swift; sourceTree = "<group>"; };
 		EA35331E22C0525C00250B7A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EA4001E822C1941C0099488D /* PresenterInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresenterInfoViewController.swift; sourceTree = "<group>"; };
+		EA4167B622C323FF007C6E74 /* presenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = presenter.swift; sourceTree = "<group>"; };
 		F63E492C087CA76B601470E2 /* Pods_ExpoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ExpoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -141,6 +143,7 @@
 		EA3532F922C0525900250B7A /* Expo */ = {
 			isa = PBXGroup;
 			children = (
+				EA4167B522C323E7007C6E74 /* objects */,
 				EA3532FA22C0525900250B7A /* AppDelegate.swift */,
 				EA3532FC22C0525900250B7A /* FirstViewController.swift */,
 				EA3532FE22C0525900250B7A /* SecondViewController.swift */,
@@ -169,6 +172,14 @@
 				EA35331E22C0525C00250B7A /* Info.plist */,
 			);
 			path = ExpoUITests;
+			sourceTree = "<group>";
+		};
+		EA4167B522C323E7007C6E74 /* objects */ = {
+			isa = PBXGroup;
+			children = (
+				EA4167B622C323FF007C6E74 /* presenter.swift */,
+			);
+			path = objects;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -394,6 +405,7 @@
 			files = (
 				EA3532FF22C0525900250B7A /* SecondViewController.swift in Sources */,
 				EA4001E922C1941C0099488D /* PresenterInfoViewController.swift in Sources */,
+				EA4167B722C323FF007C6E74 /* presenter.swift in Sources */,
 				EA3532FB22C0525900250B7A /* AppDelegate.swift in Sources */,
 				EA3532FD22C0525900250B7A /* FirstViewController.swift in Sources */,
 			);
