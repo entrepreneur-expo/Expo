@@ -12,12 +12,22 @@ import SwiftyJSON
 
 class PresenterInfoViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
     
+    @IBOutlet weak var presenterProductsCollectionView: UICollectionView!
+    @IBOutlet weak var infoView: UIView!
+    @IBOutlet weak var presenterName: UILabel!
+    
     var productList = [product]()
+    
+    @IBOutlet weak var presenterImageView: UIImageView!
     
     
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        presenterProductsCollectionView.dataSource = self
+        presenterProductsCollectionView.delegate = self
+        infoView.layer.cornerRadius = 25
 
         // Do any additional setup after loading the view.
     }
@@ -32,6 +42,8 @@ class PresenterInfoViewController: UIViewController, UICollectionViewDelegate, U
                 let data = JSON(response.data)
                 let newPresenter = presenter()
                 newPresenter.dictionaryToClass(dictionary: data.dictionaryObject! as NSDictionary)
+                
+                
                 
                 
                
@@ -50,8 +62,13 @@ class PresenterInfoViewController: UIViewController, UICollectionViewDelegate, U
             switch response.result{
             case.success:
                 let data = JSON(response.data)
-                let newProduct = product()
-                newProduct.dictionaryToClass(dictionary: data.dictionaryObject! as NSDictionary)
+                for tempProduct in data{
+                    let newProduct = product()
+                    newProduct.dictionaryToClass(dictionary: data.dictionaryObject! as NSDictionary)
+                    
+                    self.productList.append(newProduct)
+                    self.presenterProductsCollectionView.reloadData()
+                }
                 
                 
                 
@@ -69,7 +86,7 @@ class PresenterInfoViewController: UIViewController, UICollectionViewDelegate, U
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "product", for: indexPath) as! ProductCollectionViewCell
+        let cell = presenterProductsCollectionView.dequeueReusableCell(withReuseIdentifier: "product", for: indexPath) as! ProductCollectionViewCell
         let cellproduct = self.productList[indexPath.row]
     
         

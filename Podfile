@@ -10,6 +10,9 @@ target 'Expo' do
   pod 'Alamofire'
   pod 'SwiftyJSON', '~> 4.2.0'
   pod 'SDWebImage', '~> 4.0'
+  
+  #ANIMATIONS
+  pod 'SkeletonView'
 
   target 'ExpoTests' do
     inherit! :search_paths
