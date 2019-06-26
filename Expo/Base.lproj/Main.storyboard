@@ -47,10 +47,10 @@
             </objects>
             <point key="canvasLocation" x="750" y="-320"/>
         </scene>
-        <!--View Controller-->
+        <!--Presenter Info View Controller-->
         <scene sceneID="ZVV-N2-aT5">
             <objects>
-                <viewController id="PSC-Yq-cee" sceneMemberID="viewController">
+                <viewController id="PSC-Yq-cee" customClass="PresenterInfoViewController" customModule="Expo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="xsQ-ea-o4h">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

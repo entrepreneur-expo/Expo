@@ -21,6 +21,7 @@
 		EA4001E922C1941C0099488D /* PresenterInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4001E822C1941C0099488D /* PresenterInfoViewController.swift */; };
 		EA4167B722C323FF007C6E74 /* presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4167B622C323FF007C6E74 /* presenter.swift */; };
 		EA4167B922C32556007C6E74 /* product.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4167B822C32556007C6E74 /* product.swift */; };
+		EA4167BB22C32C9C007C6E74 /* ProductCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4167BA22C32C9C007C6E74 /* ProductCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +67,7 @@
 		EA4001E822C1941C0099488D /* PresenterInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresenterInfoViewController.swift; sourceTree = "<group>"; };
 		EA4167B622C323FF007C6E74 /* presenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = presenter.swift; sourceTree = "<group>"; };
 		EA4167B822C32556007C6E74 /* product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = product.swift; sourceTree = "<group>"; };
+		EA4167BA22C32C9C007C6E74 /* ProductCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCollectionViewCell.swift; sourceTree = "<group>"; };
 		F63E492C087CA76B601470E2 /* Pods_ExpoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ExpoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -154,6 +156,7 @@
 				EA35330522C0525C00250B7A /* LaunchScreen.storyboard */,
 				EA35330822C0525C00250B7A /* Info.plist */,
 				EA4001E822C1941C0099488D /* PresenterInfoViewController.swift */,
+				EA4167BA22C32C9C007C6E74 /* ProductCollectionViewCell.swift */,
 			);
 			path = Expo;
 			sourceTree = "<group>";
@@ -408,6 +411,7 @@
 			files = (
 				EA3532FF22C0525900250B7A /* SecondViewController.swift in Sources */,
 				EA4001E922C1941C0099488D /* PresenterInfoViewController.swift in Sources */,
+				EA4167BB22C32C9C007C6E74 /* ProductCollectionViewCell.swift in Sources */,
 				EA4167B722C323FF007C6E74 /* presenter.swift in Sources */,
 				EA4167B922C32556007C6E74 /* product.swift in Sources */,
 				EA3532FB22C0525900250B7A /* AppDelegate.swift in Sources */,
