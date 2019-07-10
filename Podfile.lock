@@ -3,13 +3,13 @@ PODS:
   - SDWebImage (4.4.6):
     - SDWebImage/Core (= 4.4.6)
   - SDWebImage/Core (4.4.6)
-  - SkeletonView (1.5)
+  - SkeletonView (1.4.2)
   - SwiftyJSON (4.2.0)
 
 DEPENDENCIES:
   - Alamofire
   - SDWebImage (~> 4.0)
-  - SkeletonView
+  - SkeletonView (~> 1.4.1)
   - SwiftyJSON (~> 4.2.0)
 
 SPEC REPOS:
@@ -22,9 +22,9 @@ SPEC REPOS:
 SPEC CHECKSUMS:
   Alamofire: ae5c501addb7afdbb13687d7f2f722c78734c2d3
   SDWebImage: 3f3f0c02f09798048c47a5ed0a13f17b063572d8
-  SkeletonView: 6cbb80f82f8bdee3f9093e2fa03b84819b4bd826
+  SkeletonView: c2523c3c8c6510e273e49a3bf364a434744c3914
   SwiftyJSON: c4bcba26dd9ec7a027fc8eade48e2c911f229e96
 
-PODFILE CHECKSUM: 15a23cc0aef2ffe13999f066a68067f66ed73ed7
+PODFILE CHECKSUM: b431e107708ae18cc4a3f740260e2e60ba3aa3fd
 
 COCOAPODS: 1.7.0.rc.1

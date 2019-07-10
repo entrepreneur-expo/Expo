@@ -15,8 +15,12 @@ class PresenterInfoViewController: UIViewController, UICollectionViewDelegate, U
     @IBOutlet weak var presenterProductsCollectionView: UICollectionView!
     @IBOutlet weak var infoView: UIView!
     @IBOutlet weak var presenterName: UILabel!
+    @IBOutlet weak var presenterBioTextView: UITextView!
     
+    @IBOutlet weak var presenterTitleLabel: UILabel!
     var productList = [product]()
+    var chosenPresenter = presenter()
+    var presenterImage = UIImage()
     
     @IBOutlet weak var presenterImageView: UIImageView!
     
@@ -25,9 +29,22 @@ class PresenterInfoViewController: UIViewController, UICollectionViewDelegate, U
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
+        self.navigationController?.navigationBar.shadowImage = UIImage()
+        self.navigationController?.navigationBar.isTranslucent = true
+        self.navigationController?.view.backgroundColor = UIColor.clear
+        
         presenterProductsCollectionView.dataSource = self
         presenterProductsCollectionView.delegate = self
+        presenterName.text = chosenPresenter.name
+        presenterTitleLabel.text = chosenPresenter.industry
+        presenterBioTextView.text = chosenPresenter.bio
+        presenterImageView.image = presenterImage
+        
+        
         infoView.layer.cornerRadius = 25
+        
+        getPresenterProducts(name: chosenPresenter.name!)
 
         // Do any additional setup after loading the view.
     }
@@ -92,6 +109,8 @@ class PresenterInfoViewController: UIViewController, UICollectionViewDelegate, U
         
         return cell
     }
+    
+    
 
     /*
     // MARK: - Navigation

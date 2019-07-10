@@ -12,7 +12,7 @@ target 'Expo' do
   pod 'SDWebImage', '~> 4.0'
   
   #ANIMATIONS
-  pod 'SkeletonView'
+  pod 'SkeletonView', '~> 1.4.1'
 
   target 'ExpoTests' do
     inherit! :search_paths

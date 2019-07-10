@@ -25,7 +25,7 @@ class product{
     func dictionaryToClass(dictionary:NSDictionary){
         let dict = JSON(dictionary)
         self.name = dict["name"].stringValue
-        self.productImageURL = dict["productimageurl"].stringValue
+        self.productImageURL = dict["image"].stringValue
         self.productDescription = dict["productDescription"].stringValue
         self.productPrice = dict["productPrice"].stringValue
         

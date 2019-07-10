@@ -18,10 +18,15 @@
 		EA35330722C0525C00250B7A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA35330522C0525C00250B7A /* LaunchScreen.storyboard */; };
 		EA35331222C0525C00250B7A /* ExpoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA35331122C0525C00250B7A /* ExpoTests.swift */; };
 		EA35331D22C0525C00250B7A /* ExpoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA35331C22C0525C00250B7A /* ExpoUITests.swift */; };
+		EA3D663822D4F040004A9183 /* PresenterTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3D663722D4F040004A9183 /* PresenterTableViewCell.swift */; };
+		EA3D663A22D4F207004A9183 /* PresenterListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3D663922D4F207004A9183 /* PresenterListViewController.swift */; };
+		EA3DB09522C42A1B00476631 /* ticket.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3DB09422C42A1B00476631 /* ticket.swift */; };
 		EA4001E922C1941C0099488D /* PresenterInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4001E822C1941C0099488D /* PresenterInfoViewController.swift */; };
 		EA4167B722C323FF007C6E74 /* presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4167B622C323FF007C6E74 /* presenter.swift */; };
 		EA4167B922C32556007C6E74 /* product.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4167B822C32556007C6E74 /* product.swift */; };
 		EA4167BB22C32C9C007C6E74 /* ProductCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4167BA22C32C9C007C6E74 /* ProductCollectionViewCell.swift */; };
+		EA55E05D22C3FB4C00488780 /* TicketsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA55E05C22C3FB4C00488780 /* TicketsViewController.swift */; };
+		EAE932BC22D434B200CBC50C /* TicketTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAE932BB22D434B200CBC50C /* TicketTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,10 +69,15 @@
 		EA35331822C0525C00250B7A /* ExpoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExpoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA35331C22C0525C00250B7A /* ExpoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpoUITests.swift; sourceTree = "<group>"; };
 		EA35331E22C0525C00250B7A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EA3D663722D4F040004A9183 /* PresenterTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresenterTableViewCell.swift; sourceTree = "<group>"; };
+		EA3D663922D4F207004A9183 /* PresenterListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresenterListViewController.swift; sourceTree = "<group>"; };
+		EA3DB09422C42A1B00476631 /* ticket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ticket.swift; sourceTree = "<group>"; };
 		EA4001E822C1941C0099488D /* PresenterInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresenterInfoViewController.swift; sourceTree = "<group>"; };
 		EA4167B622C323FF007C6E74 /* presenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = presenter.swift; sourceTree = "<group>"; };
 		EA4167B822C32556007C6E74 /* product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = product.swift; sourceTree = "<group>"; };
 		EA4167BA22C32C9C007C6E74 /* ProductCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCollectionViewCell.swift; sourceTree = "<group>"; };
+		EA55E05C22C3FB4C00488780 /* TicketsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketsViewController.swift; sourceTree = "<group>"; };
+		EAE932BB22D434B200CBC50C /* TicketTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketTableViewCell.swift; sourceTree = "<group>"; };
 		F63E492C087CA76B601470E2 /* Pods_ExpoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ExpoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -157,6 +167,10 @@
 				EA35330822C0525C00250B7A /* Info.plist */,
 				EA4001E822C1941C0099488D /* PresenterInfoViewController.swift */,
 				EA4167BA22C32C9C007C6E74 /* ProductCollectionViewCell.swift */,
+				EA55E05C22C3FB4C00488780 /* TicketsViewController.swift */,
+				EAE932BB22D434B200CBC50C /* TicketTableViewCell.swift */,
+				EA3D663722D4F040004A9183 /* PresenterTableViewCell.swift */,
+				EA3D663922D4F207004A9183 /* PresenterListViewController.swift */,
 			);
 			path = Expo;
 			sourceTree = "<group>";
@@ -184,6 +198,7 @@
 			children = (
 				EA4167B622C323FF007C6E74 /* presenter.swift */,
 				EA4167B822C32556007C6E74 /* product.swift */,
+				EA3DB09422C42A1B00476631 /* ticket.swift */,
 			);
 			path = objects;
 			sourceTree = "<group>";
@@ -413,9 +428,14 @@
 				EA4001E922C1941C0099488D /* PresenterInfoViewController.swift in Sources */,
 				EA4167BB22C32C9C007C6E74 /* ProductCollectionViewCell.swift in Sources */,
 				EA4167B722C323FF007C6E74 /* presenter.swift in Sources */,
+				EA3D663822D4F040004A9183 /* PresenterTableViewCell.swift in Sources */,
+				EA3D663A22D4F207004A9183 /* PresenterListViewController.swift in Sources */,
+				EA55E05D22C3FB4C00488780 /* TicketsViewController.swift in Sources */,
 				EA4167B922C32556007C6E74 /* product.swift in Sources */,
 				EA3532FB22C0525900250B7A /* AppDelegate.swift in Sources */,
+				EAE932BC22D434B200CBC50C /* TicketTableViewCell.swift in Sources */,
 				EA3532FD22C0525900250B7A /* FirstViewController.swift in Sources */,
+				EA3DB09522C42A1B00476631 /* ticket.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

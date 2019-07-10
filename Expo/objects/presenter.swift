@@ -15,6 +15,7 @@ class presenter{
     var profilePictureURL: String?
     var websiteURL: String?
     var industry: String?
+    var products = [product]()
     
     
     
@@ -28,8 +29,9 @@ class presenter{
         self.name = dict["name"].stringValue
         self.websiteURL = dict["websiteurl"].stringValue
         self.industry = dict["industry"].stringValue
+        self.bio = dict["bio"].stringValue
        
-        self.profilePictureURL = dictionary["profileimageurl"] as? String
+        self.profilePictureURL = dict["image"].stringValue
        
         
     }
