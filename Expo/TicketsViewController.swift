@@ -46,6 +46,7 @@ class TicketsViewController: UIViewController,UITableViewDelegate, UITableViewDa
                     print(newTicketClass.cost)
                     self.ticketList.append(newTicketClass)
                 }
+                self.ticketTableView.reloadData()
                 
                 
                 
@@ -65,7 +66,7 @@ class TicketsViewController: UIViewController,UITableViewDelegate, UITableViewDa
         let cell = ticketTableView.dequeueReusableCell(withIdentifier: "ticket", for: indexPath) as! TicketTableViewCell
         
         cell.ticketName.text = newTicket.name
-        cell.ticketImageView.sd_setImage(with: URL(string: newTicket.image!), placeholderImage: UIImage(named: "logo"))
+        //cell.ticketImageView.sd_setImage(with: URL(string: newTicket.image!), placeholderImage: UIImage(named: "logo"))
        
         
         

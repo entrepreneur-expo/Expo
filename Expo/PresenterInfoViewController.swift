@@ -16,6 +16,7 @@ class PresenterInfoViewController: UIViewController, UICollectionViewDelegate, U
     @IBOutlet weak var infoView: UIView!
     @IBOutlet weak var presenterName: UILabel!
     @IBOutlet weak var presenterBioTextView: UITextView!
+    @IBOutlet weak var moreButton: UIButton!
     
     @IBOutlet weak var presenterTitleLabel: UILabel!
     var productList = [product]()
@@ -40,9 +41,10 @@ class PresenterInfoViewController: UIViewController, UICollectionViewDelegate, U
         presenterTitleLabel.text = chosenPresenter.industry
         presenterBioTextView.text = chosenPresenter.bio
         presenterImageView.image = presenterImage
-        
+                
         
         infoView.layer.cornerRadius = 25
+        self.tabBarController?.tabBar.isHidden = true
         
         getPresenterProducts(name: chosenPresenter.name!)
 
@@ -79,9 +81,10 @@ class PresenterInfoViewController: UIViewController, UICollectionViewDelegate, U
             switch response.result{
             case.success:
                 let data = JSON(response.data)
+                print(data)
                 for tempProduct in data{
                     let newProduct = product()
-                    newProduct.dictionaryToClass(dictionary: data.dictionaryObject! as NSDictionary)
+                    newProduct.dictionaryToClass(dictionary: tempProduct.1.dictionaryObject! as NSDictionary)
                     
                     self.productList.append(newProduct)
                     self.presenterProductsCollectionView.reloadData()
@@ -105,6 +108,7 @@ class PresenterInfoViewController: UIViewController, UICollectionViewDelegate, U
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = presenterProductsCollectionView.dequeueReusableCell(withReuseIdentifier: "product", for: indexPath) as! ProductCollectionViewCell
         let cellproduct = self.productList[indexPath.row]
+        cell.productImageView!.sd_setImage(with: URL(string: cellproduct.productImageURL!))
     
         
         return cell

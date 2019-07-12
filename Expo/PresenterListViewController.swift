@@ -17,6 +17,13 @@ class PresenterListViewController: UIViewController,UITableViewDataSource,UITabl
     @IBOutlet weak var presenterTableView: UITableView!
     var presenterList = [presenter]()
     var chosenPresenter = presenter()
+    
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.tabBarController?.tabBar.isHidden = false
+        view.alpha = 1.0
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -28,8 +28,7 @@ class product{
         self.productImageURL = dict["image"].stringValue
         self.productDescription = dict["productDescription"].stringValue
         self.productPrice = dict["productPrice"].stringValue
-        
-        self.productImageURL = dict["productimageurl"].stringValue
+     
         
         
     }
